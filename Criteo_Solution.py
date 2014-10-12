@@ -5,9 +5,10 @@
 #   http://www.kaggle.com/c/criteo-display-ad-challenge/forums/t/10322/beat-the-benchmark-with-less-then-200mb-of-memory
 #   under the license below       : )
 #
-#  Big thanks to Kaggle user TINRTGU for sharing the code!
-#  I've left sections A - D mostly as given
-#  my modifications to them did not lead to improvement
+#  Big thanks to Kaggle user TINRTGU for sharing his code!
+#  I've left sections A - D mostly as given.
+# 
+#  The rest of the script is primarily my add-ons to run multiple epochs and cross-validate
 
 '''
            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
