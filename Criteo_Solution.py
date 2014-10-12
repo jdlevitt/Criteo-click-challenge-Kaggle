@@ -119,7 +119,7 @@ def update_w(w, n, x, p, y):
     for i in x:
         # alpha / (sqrt(n) + 1) is the adaptive learning rate heuristic
         # (p - y) * x[i] is the current gradient
-        # but for quadratic kernel, replace x[i] by 2 * (1 + old_wTx) * x[i] chain rule
+        # but for quadratic kernel, need to be careful with chain rule
         # note that in our case, if i in x then x[i] = 1
         #w[i] -= (p - y) * alpha * exp(-1. * n[i])
         w[i] = (1 - reg_param*alpha / (sqrt(n[i]) + 1.))* w[i] - (p - y) * alpha / (sqrt(n[i]) + 1.)
